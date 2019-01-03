@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title >Vending Machine</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: black">
+  <div class="container" style="color: purple" style="font-weight: bolder;" >
+    <h1 class="text-center"">Vending Machine</h1>
+    <hr>
+    <!-- SNACKS -->
+    <div id="snackColumn" class="col-sm-7"></div>
+    <!-- FORMS -->
+    <div class="col-sm-5">
+      <div class="row">
+        <h3 class="text-center">Total Entered</h3>
+        <form>
+          <div class="form-group">
+            <input class="form-control" id="balance" type="text" value="0.00" disabled>
+          </div>
+        </form>
+        <div class="text-center">
+          <button id="addDollarBtn" class="btn btn-default" type="button" style="border-radius: 50%">Add Dollar</button>
+          <button id="addQuarterBtn" class="btn btn-default" type="button" style="border-radius: 50%">Add Quarter</button>
+        </div>
+        <div class="text-center">
+          <button id="addDimeBtn" class="btn btn-default" type="button" style="border-radius: 50%">Add Dime</button>
+          <button id="addNickelBtn" class="btn btn-default" type="button" style="border-radius: 50%">Add Nickel</button>
+        </div>
+        <hr>
+      </div>
+      <div class="row">
+        <h3 class="text-center">Messages</h3>
+        <form>
+          <div class="form-group">
+            <input id="message" class="form-control" disabled></input>
+          </div>
+          <div class="form-group">
+            <h3 style="display:inline">You have Selected: </h3>
+            <input id="itemNum" class="form-control" type="text" style="width:75%;display:inline" disabled>
+          </div>
+        </form>
+        <button id="makePurchaseBtn" class="btn btn-default btn-block" type="button">Purchase Item</button>
+        <hr>
+      </div>
+      <div class="row" style="margin-bottom: 30px">
+        <h3 class="text-center">Change</h3>
+        <form>
+          <div class="form-group">
+            <textarea id="changeMsg" class="form-control" row="2" disabled></textarea>
+          </div>
+        </form>
+        <button id="changeBtn" class="btn btn-default btn-block" type="button">Get Change</button>
+      </div>
+    </div>
+  </div>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/home.js"></script>
+
+
+</body>
+</html>
